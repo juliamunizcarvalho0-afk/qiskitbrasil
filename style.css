@@ -191,7 +191,6 @@ nav ul li a:hover {
   -webkit-text-fill-color: transparent;
   z-index: 1;
   color: #ffffff;
-  -webkit-text-stroke: 1px #000;
 }
 
 .date-box {
