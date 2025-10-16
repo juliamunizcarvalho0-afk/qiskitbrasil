@@ -718,7 +718,7 @@ nav ul li a:hover {
   left: 22%;
   right: 22%;
   height: 4px;
-  bottom: 4px;
+  bottom: 40px;
   background: linear-gradient(90deg, #d60270, #9b4f96, #4a6cf7);
   border-radius: 2px;
   z-index: 2;
