@@ -33,6 +33,7 @@ dayCards.forEach(card => {
       const item = icon.closest('.timeline-item');
       if (!item) return;
 
+      const isMobile = window.innerWidth <= 768; // breakpoint mobile
       const isAlreadyOpen = item.classList.contains('open');
 
       // Fecha todos os itens e painel atual
@@ -42,8 +43,7 @@ dayCards.forEach(card => {
       panel.innerHTML = '';
       container.classList.remove('expanded-line');
 
-      // Se o mesmo ícone foi clicado, só fecha e sai
-      if (isAlreadyOpen) return;
+      if (isAlreadyOpen || isMobile) return; // no mobile, não expande nem mantém aberto
 
       // Caso contrário, abre o painel
       const content = item.querySelector('.timeline-content-item');
@@ -82,6 +82,7 @@ dayCards.forEach(card => {
     }
   });
 })();
+
 
 
 // ====== MENU MOBILE ======
