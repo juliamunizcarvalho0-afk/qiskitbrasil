@@ -22,92 +22,63 @@ dayCards.forEach(card => {
 // ====== TIMELINE ======
 (function setupTimeline() {
   const timelineIcons = document.querySelectorAll('.timeline-icon');
-  if (!timelineIcons || timelineIcons.length === 0) return;
+  if (!timelineIcons.length) return;
+
+  const container = document.querySelector('.timeline-content');
+  const panel = document.getElementById('timeline-panel');
 
   timelineIcons.forEach(icon => {
     icon.addEventListener('click', (e) => {
       e.stopPropagation();
       const item = icon.closest('.timeline-item');
       if (!item) return;
-      const isOpen = item.classList.contains('open');
 
-      const container = document.querySelector('.timeline-content');
-      const panel = document.getElementById('timeline-panel');
-      if (panel) {
-        panel.classList.remove('open');
-        panel.setAttribute('aria-hidden', 'true');
-        panel.innerHTML = '';
-        if (container) container.classList.remove('expanded-line');
-      }
+      const isAlreadyOpen = item.classList.contains('open');
 
-      if (!isOpen && panel) {
-        const content = item.querySelector('.timeline-content-item');
-        if (content) {
-          const clone = content.cloneNode(true);
-          clone.classList.add('timeline-panel-content');
-          clone.classList.remove('timeline-content-item');
-          if (clone.id) clone.id = '';
-          clone.style.position = 'static';
-          clone.style.transform = 'none';
-          clone.style.display = 'block';
+      // Fecha todos os itens e painel atual
+      document.querySelectorAll('.timeline-item.open').forEach(i => i.classList.remove('open'));
+      panel.classList.remove('open');
+      panel.setAttribute('aria-hidden', 'true');
+      panel.innerHTML = '';
+      container.classList.remove('expanded-line');
 
-          panel.appendChild(clone);
-          panel.classList.add('open');
-          panel.setAttribute('aria-hidden', 'false');
-          if (container) container.classList.add('expanded-line');
+      // Se o mesmo ícone foi clicado, só fecha e sai
+      if (isAlreadyOpen) return;
 
-          const scrollHeight = clone.scrollHeight || clone.getBoundingClientRect().height || 0;
-          const viewportHalf = Math.floor(window.innerHeight * 0.6);
-          const maxPanelHeight = Math.min(600, viewportHalf);
+      // Caso contrário, abre o painel
+      const content = item.querySelector('.timeline-content-item');
+      if (content) {
+        const clone = content.cloneNode(true);
+        clone.classList.add('timeline-panel-content');
+        clone.classList.remove('timeline-content-item');
+        clone.style.position = 'static';
+        clone.style.transform = 'none';
+        clone.style.display = 'block';
 
-          const timelineRow = container.querySelector('.timeline-container');
-          if (timelineRow) {
-            panel.style.position = 'absolute';
-            const rowOffsetTop = timelineRow.offsetTop || 0;
-            const rowHeight = timelineRow.offsetHeight || 0;
-            const topPos = rowOffsetTop + rowHeight + 8;
-            panel.style.top = topPos + 'px';
-            panel.style.left = '50%';
-            panel.style.transform = 'translateX(-50%)';
-            panel.style.width = Math.min(760, container.clientWidth - 40) + 'px';
-          }
+        panel.appendChild(clone);
+        panel.classList.add('open');
+        panel.setAttribute('aria-hidden', 'false');
+        container.classList.add('expanded-line');
+        item.classList.add('open');
 
-          if (scrollHeight + 24 > maxPanelHeight) {
-            panel.style.maxHeight = maxPanelHeight + 'px';
-            panel.style.overflow = 'auto';
-          } else {
-            panel.style.maxHeight = '';
-            panel.style.overflow = '';
-          }
-
-          setTimeout(() => {
-            panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-          }, 80);
-        }
-      } else {
-        if (container) container.style.setProperty('--timeline-extra', '0px');
+        // Scroll suave até o painel
+        setTimeout(() => {
+          panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 120);
       }
     });
   });
 
-  function closeTimelinePanel() {
-    const panel = document.getElementById('timeline-panel');
-    const container = document.querySelector('.timeline-content');
-    if (panel) {
-      panel.classList.remove('open');
-      panel.setAttribute('aria-hidden', 'true');
-      panel.innerHTML = '';
-      panel.style.maxHeight = '';
-      panel.style.overflow = '';
-    }
-    if (container) container.style.setProperty('--timeline-extra', '0px');
-  }
-
+  // Clique fora da timeline fecha o painel
   document.addEventListener('click', (e) => {
-    const clickedInsideTimeline = !!e.target.closest('.timeline-content');
-    const clickedInsidePanel = !!e.target.closest('#timeline-panel');
-    if (!clickedInsideTimeline && !clickedInsidePanel) {
-      closeTimelinePanel();
+    const clickedInside = e.target.closest('.timeline-content') || e.target.closest('#timeline-panel');
+    if (!clickedInside) {
+      document.querySelectorAll('.timeline-item.open').forEach(i => i.classList.remove('open'));
+      if (panel) {
+        panel.classList.remove('open');
+        panel.innerHTML = '';
+        container.classList.remove('expanded-line');
+      }
     }
   });
 })();
