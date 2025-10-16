@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/atomroxo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiskit Fall Fest 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <nav>
+        <div class="nav-logo">
+            <a href="#home">QiskitFallfest - Brasil</a>
+        </div>
+        <button class="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#calendar">Programação</a></li>
+            <li><a href="#team">Participantes</a></li>
+        </ul>
+        <a href="https://forms.cloud.microsoft/r/MAqb4MTKXw" target="_blank" class="register-btn">Registrar</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+            <div class="quantum-bg">
+            <div class="quantum-grid"></div>
+                <div class="quantum-particles"></div>
+                <div class="quantum-waves"></div>
+                <div class="glass-wave"></div>
+                <div class="quantum-glow"></div>
+                <div class="bright-overlay"></div>
+        </div>
+        <img src="images/atomonovo.png" alt="Atom Roxo" class="atom-logo">
+        <div class="date-box">5, 6 e 10 de Novembro de 2025</div>
+        <h1>Qiskit Fall Fest 2025 - UFABC</h1>
+        <p>O maior evento de computação quântica da Universidade Federal do ABC. Participe de um dia de aprendizado, inovação e comunidade no mundo das tecnologias quânticas.</p>
+        
+        <div class="cta-buttons">
+            <a href="https://forms.cloud.microsoft/r/MAqb4MTKXw" target="_blank" class="cta-btn">Registrar Agora</a>
+            <a href="#about" class="cta-btn">Saiba Mais</a>
+        </div>
+        
+        <div id="countdown">
+            <div class="count-box"><span id="days">00</span><p>Dias</p></div>
+            <div class="count-box"><span id="hours">00</span><p>Horas</p></div>
+            <div class="count-box"><span id="minutes">00</span><p>Minutos</p></div>
+            <div class="count-box"><span id="seconds">00</span><p>Segundos</p></div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-qff">
+        <div class="about-container">
+            <!-- Badge / Título -->
+            <div class="about-header">
+                <div class="about-badge">
+                    <i class="fas fa-atom"></i>
+                    <span>Sobre o Evento</span>
+                </div>
+                <h2 class="about-title">
+                    <span class="highlight-text">Qiskit Fall Fest 2025 – UFABC</span><br>
+                    Um encontro único de computação quântica no Brasil
+                </h2>
+                <p class="about-description">
+                    O Qiskit Fall Fest é uma celebração mundial de computação quântica.
+                    Em 2025, a <strong>Universidade Federal do ABC</strong> recebe o primeiro
+                    Fall Fest brasileiro, conectando estudantes, pesquisadores e entusiastas
+                    à comunidade global do Qiskit.
+                </p>
+            </div>
+
+            <!-- Conteúdo em duas colunas -->
+            <div class="about-content">
+                <div class="about-text">
+                    <ul>
+                        <li>Workshops práticos de programação em <strong>Qiskit</strong> e criação de circuitos quânticos.</li>
+                        <li>Palestras de especialistas da <strong>IBM Quantum Network</strong> e líderes acadêmicos nacionais.</li>
+                        <li>Todos os participantes que concluírem as atividades receberão um <strong>certificado oficial</strong> de participação.</li>
+                        <li>Celebrando os <strong>100 anos da Física Quântica</strong>, base para as tecnologias do futuro.</li>
+                    </ul>
+                </div>
+
+                <div class="about-visual">
+                    <div class="about-showcase">
+                        <a href="https://www.ufabc.edu.br/" target="_blank">
+                            <img src="images/UFABC.png" alt="Logo UFABC" class="about-center">
+                        </a>
+
+                        <!-- CONTAINER QUE GIRA -->
+                        <div class="orbit-container">
+                            <img src="images/ibmquantom.jpeg"   alt="Átomo"   class="orbit-item orbit-1">
+                            <img src="images/atombranco.png" alt="Qiskit" class="orbit-item orbit-2">
+                            <img src="images/qiskitbranco.png"     alt="Roxinho" class="orbit-item orbit-3">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar" class="calendar-section">
+        <div class="calendar-grid-bg"></div>
+        <!-- Quantum Background Effects -->
+        <div class="quantum-calendar-bg">
+            <div class="quantum-particles-calendar"></div>
+            <div class="quantum-waves"></div>
+            <div class="circuit-patterns"></div>
+        </div>
+        
+        <div class="container">
+            <div class="calendar-content">
+                <div class="section-badge">
+                    <i class="fas fa-calendar" style="color: #87339a"></i>
+                    <span style="color: #87339a">Programação Completa</span>
+                </div>
+                <h2 class="calendar-title">5, 6 e 10 de Novembro de 2025</h2>
+                
+               <div class="daily-schedule">
+
+  <!-- Dia 1 -->
+  <div class="day-group">
+    <div class="schedule-item day-card" data-day="1">
+      <div class="time-slot">05/11</div>
+      <div class="event-details">
+        <h3>Quantum Kickoff</h3>
+        <p>Introdução à quantum + básico de Qiskit</p>
+      </div>
+    </div>
+
+    <div class="day-schedule" id="day-1">
+      <div class="schedule-item">
+        <div class="time-slot">9:00 – 9:30</div>
+        <div class="event-details">
+          <h3>Welcome & Icebreaker</h3>
+          <p>Apresentação dos organizadores, wordcloud interativa e introdução ao hackathon.</p>
+          <div class="speaker">Equipe Organizadora</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">9:30 – 11:00</div>
+        <div class="event-details">
+          <h3>Talk: Quantum Computing Basics 101</h3>
+          <p>Conceitos fundamentais: superposição, entrelaçamento e álgebra linear aplicada.</p>
+          <div class="speaker">Professor UFABC</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">11:00 – 11:15</div>
+        <div class="event-details">
+          <h3>Quantum Trivia</h3>
+          <p>Quiz interativo sobre os conceitos apresentados.</p>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">11:15 – 11:30</div>
+        <div class="event-details">
+          <h3>Break</h3>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">11:30 – 13:00</div>
+        <div class="event-details">
+          <h3>Workshop: Getting Started with Qiskit</h3>
+          <p>Primeiros passos com o Qiskit — criação de circuitos e gerador de número aleatório.</p>
+          <div class="speaker">Glauco</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">13:00 – 14:00</div>
+        <div class="event-details">
+          <h3>Almoço</h3>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">14:00 – 14:45</div>
+        <div class="event-details">
+          <h3>Contexto IBM Quantum</h3>
+          <p>Roadmap IBM, Qiskit e panorama dos computadores quânticos da IBM.</p>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">14:45 – 15:30</div>
+        <div class="event-details">
+          <h3>Talk + Panel/Q&A</h3>
+          <p>Discussão entre professor convidado e especialista IBM.</p>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">15:30 – 16:30</div>
+        <div class="event-details">
+          <h3>Networking Acadêmico</h3>
+          <p>Apresentação de entidades UFABC e USP, espaço de troca e networking.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dia 2 -->
+  <div class="day-group">
+    <div class="schedule-item day-card" data-day="2">
+      <div class="time-slot">06/11</div>
+      <div class="event-details">
+        <h3>Quantum Deep Dive</h3>
+        <p>Circuitos, desafios, e IBM keynote finale</p>
+      </div>
+    </div>
+
+    <div class="day-schedule" id="day-2">
+      <div class="schedule-item">
+        <div class="time-slot">9:00 – 9:30</div>
+        <div class="event-details">
+          <h3>Quick Recap</h3>
+          <p>Resumo do primeiro dia e contextualização do hackathon.</p>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">9:30 – 11:00</div>
+        <div class="event-details">
+          <h3>Talk: Quantum Applications</h3>
+          <p>Exploração de aplicações práticas e novos conceitos da computação quântica.</p>
+          <div class="speaker">IBM / Acadêmico (Risc)</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">11:00 – 11:15</div>
+        <div class="event-details">
+          <h3>Break</h3>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">11:15 – 12:00</div>
+        <div class="event-details">
+          <h3>IBM Talk - Visão América Latina</h3>
+          <p>Panorama IBM Quantum na América Latina e perspectivas futuras.</p>
+          <div class="speaker">Alexandre Pfifer</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">12:00 – 13:00</div>
+        <div class="event-details">
+          <h3>Almoço</h3>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">13:00 – 13:45</div>
+        <div class="event-details">
+          <h3>Workshop: Building Circuits in Qiskit</h3>
+          <p>Construção e análise de circuitos quânticos.</p>
+          <div class="speaker">Risc</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">14:45 – 15:00</div>
+        <div class="event-details">
+          <h3>Closing Ceremony</h3>
+          <p>Encerramento e reforço do hackathon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dia 3 -->
+  <div class="day-group">
+    <div class="schedule-item day-card" data-day="3">
+      <div class="time-slot">10/11</div>
+      <div class="event-details">
+        <h3>Hackathon Finale</h3>
+        <p>Apresentações e encerramento</p>
+      </div>
+    </div>
+
+    <div class="day-schedule" id="day-3">
+      <div class="schedule-item">
+        <div class="time-slot">13:00 - 13:15</div>
+        <div class="event-details">
+          <h3>Abertura</h3>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">13:15 - 13:45</div>
+        <div class="event-details">
+          <h3>Dinâmica com Prêmios</h3>
+          <p>Atividade interativa com participantes.</p>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">13:45 - 14:15</div>
+        <div class="event-details">
+          <h3>Apresentação dos Projetos Finalistas</h3>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">14:15 - 14:30</div>
+        <div class="event-details">
+          <h3>Entrega dos Certificados</h3>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">14:30 - 14:50</div>
+        <div class="event-details">
+          <h3>Feedback dos Participantes</h3>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="time-slot">14:50 - 15:10</div>
+        <div class="event-details">
+          <h3>Anúncio da Comunidade de Estudos Quânticos IBM</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section - 100 Years of Quantum Mechanics -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <div class="timeline-content">
+                <div class="section-badge">
+                    <i class="fas fa-history"></i>
+                    <span>Linha do Tempo</span>
+                </div>
+                <h2 class="timeline-title">100 Anos da Física Quântica</h2>
+                <p class="timeline-description">
+                    Uma jornada através dos marcos históricos que moldaram nossa compreensão do mundo quântico
+                </p>
+                
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="images/CARINHADOSGATINHOS.png" alt="1925 - Fundamentos" class="timeline-image">
+                        </div>
+                        <div class="timeline-content-item">
+                            <div class="timeline-year">1925</div>
+                            <h3>Fundamentos da Física Quântica</h3>
+                            <p>Heisenberg, Schrödinger e Born estabelecem os princípios fundamentais da física quântica moderna.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="images/carinhadasequacoes.png" alt="1950s - Desenvolvimento" class="timeline-image">
+                        </div>
+                        <div class="timeline-content-item">
+                            <div class="timeline-year">1950s</div>
+                            <h3>Expansão Teórica</h3>
+                            <p>Desenvolvimento da eletrodinâmica quântica e aprofundamento dos conceitos de superposição e emaranhamento.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="images/doutora.png" alt="1980s - Computação" class="timeline-image">
+                        </div>
+                        <div class="timeline-content-item">
+                            <div class="timeline-year">1980s</div>
+                            <h3>Nascimento da Computação Quântica</h3>
+                            <p>Feynman e outros pioneiros propõem o conceito de computadores quânticos para simular sistemas quânticos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="images/einstein.png" alt="2025 - Presente" class="timeline-image">
+                        </div>
+                        <div class="timeline-content-item">
+                            <div class="timeline-year">2025</div>
+                            <h3>Era da Aplicação Prática</h3>
+                            <p>Computadores quânticos reais, algoritmos práticos e o QiskitFallFest-BRASIL celebrando este centenário!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="team-content">
+                <div class="section-badge">
+                    <i class="fas fa-users"></i>
+                    <span>Nossa Equipe</span>
+                </div>
+                <h2 class="team-title">Quem Torna Este Evento Possível</h2>
+                
+                <!-- Organizers -->
+                <div class="team-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-user-tie"></i>
+                        Organizadores
+                    </h3>
+                    <div class="team-grid" id="organizers-grid">
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <img src="images/Diogo.png" alt="Diogo Novo" class="member-image">
+                            </div>
+                            <div class="member-info">
+                                <h4 class="member-name">
+                                    Diogo Novo
+                                </h4>
+                                <p class="member-role"><a href="https://www.linkedin.com/in/diogonascimentonovo/" target="_blank" rel="noopener" style="text-decoration: none;"> Sales Enterprise</a></p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <img src="images/Guilherme.png" alt="Guilherme Alves" class="member-image">
+                            </div>
+                            <div class="member-info">
+                                <h4 class="member-name">Guilherme Alves </h4>
+                                <p class="member-role"><a href="https://www.linkedin.com/in/guilhermeaalves/" target="_blank" rel="noopener" style="text-decoration: none;">Automation Tech Sales</a></p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <img src="images/Matheus.png" alt="Matheus Branco" class="member-image">
+                            </div>
+                            <div class="member-info">
+                                <h4 class="member-name">Matheus Branco </h4>
+                                <p class="member-role"><a href="https://www.linkedin.com/in/matheusbrancof/" target="_blank" rel="noopener" style="text-decoration: none;">Automation Tech Sales</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="side-by-side">
+                    <!-- Speakers -->
+                    <div class="team-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-microphone"></i>
+                            Palestrantes
+                        </h3>
+                        <div class="team-grid" id="speakers-grid">
+                            <div class="team-member placeholder-member">
+                                <div class="member-photo">
+                                    <img src="images/Rischioto.png" alt="Palestrante" class="member-image">
+                                </div>
+                                <div class="member-info">
+                                    <h4 class="member-name">Carlos Rischioto</h4>
+                                    <p class="member-role"><a href="https://www.linkedin.com/in/rischioto/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">Principal Client Engineering Manager</a></p>
+                                    <p class="member-bio">IBM Quantum Ambassador</p>
+                                </div>
+                            </div>
+                            
+                            <div class="team-member placeholder-member">
+                                <div class="member-photo">
+                                    <img src="images/Glauco.png" alt="Palestrante" class="member-image">
+                                </div>
+                                <div class="member-info">
+                                    <h4 class="member-name">Glauco Reis</h4>
+                                    <p class="member-role"><a href="https://www.linkedin.com/in/glaucoreis/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">Senior Client Engineering Architect</a></p>
+                                    <p class="member-bio">Qiskit Certified Developer 2.0 and Qiskit Advocate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contributors -->
+                    <div class="team-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-hands-helping"></i>
+                            Contribuidores
+                        </h3>
+                        <div class="team-grid" id="contributors-grid" >
+                            <div class="team-member">
+                                <div class="member-photo">
+                                    <img src="images/Julia.png" alt="Júlia Muniz" class="member-image">
+                                </div>
+                                <div class="member-info">
+                                    <h4 class="member-name">Júlia Muniz </h4>
+                                    <p class="member-role"><a href="https://www.linkedin.com/in/j%C3%BAlia-muniz-98932a272/" target="_blank" rel="noopener" style="text-decoration: none;">Digital Experience</a></p>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-photo">
+                                    <img src="images/Yas.png" alt="Yasmin Santos" class="member-image">
+                                </div>
+                                <div class="member-info">
+                                    <h4 class="member-name">Yasmin Santos </h4>
+                                    <p class="member-role"><a href="https://www.linkedin.com/in/yasmin-monteiro-m-dos-santos/" target="_blank" rel="noopener" style="text-decoration: none;">Web Project Management</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="cta-save-date"
+            style="width:100vw; position:relative; left:50%; margin-left:-50vw;
+                    background:linear-gradient(90deg,#f8fafc 0%,#e2e8f0 100%);
+                    padding:2.2rem 0; text-align:center;
+                    box-shadow:0 2px 12px rgba(124,58,237,0.06);">
+
+            <!-- Título -->
+            <div style="font-size:1.6rem; font-weight:700;
+                        background:linear-gradient(90deg,#d60270,#9b4f96,#4a6cf7);
+                        -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                        background-clip:text; margin-bottom:0.8rem;">
+                Participe Aqui – Save the Date
+            </div>
+
+            <!-- Texto de apoio -->
+            <div style="font-size:1rem; color:#2d3394; margin-bottom:1.6rem; font-weight:400;">
+                Reserve esta data: <strong>5, 6 e 10 de Novembro de 2025, 09h–17h</strong>.  
+                Garanta sua presença e adicione ao seu calendário agora mesmo.
+            </div>
+
+            <!-- Botões -->
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;">
+                <a href="https://forms.cloud.microsoft/r/MAqb4MTKXw" target="_blank"
+                style="background:linear-gradient(90deg,#d60270,#9b4f96,#4a6cf7);
+                        color:#fff; font-weight:600; font-size:1rem;
+                        border-radius:999px; padding:0.7rem 1.4rem;
+                        text-decoration:none; transition:opacity 0.2s;">
+                    Registrar Agora
+                </a>
+
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Qiskit+Fall+Fest+2025+UFABC&dates=20251114T160000Z/20251114T200000Z&details=O+maior+evento+de+computação+quântica+da+UFABC!&location=Online"
+                target="_blank" rel="noopener"
+                style="background:linear-gradient(90deg,#4a6cf7,#9b4f96,#d60270);
+                        color:#fff; font-weight:600; font-size:1rem;
+                        border-radius:999px; padding:0.7rem 1.4rem;
+                        text-decoration:none; transition:opacity 0.2s;">
+                    Google Calendar
+                </a>
+
+                <a href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Qiskit%20Fall%20Fest%202025%20UFABC&body=O%20maior%20evento%20de%20computação%20quântica%20da%20UFABC!&startdt=2025-11-14T13:00:00&enddt=2025-11-14T17:00:00&location=Online"
+                target="_blank" rel="noopener"
+                style="background:linear-gradient(90deg,#4a6cf7,#9b4f96,#d60270);
+                        color:#fff; font-weight:600; font-size:1rem;
+                        border-radius:999px; padding:0.7rem 1.4rem;
+                        text-decoration:none; transition:opacity 0.2s;">
+                    Outlook Calendar
+                </a>
+            </div> <!-- fecha a div dos botões -->
+
+        </div> <!-- fecha a div .cta-save-date -->
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#calendar">Programação</a></li>
+                        <li><a href="#timeline">Linha do Tempo</a></li>
+                        <li><a href="#team">Nossa Equipe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Evento & Data</h4>
+                    <ul>
+                        <li><a href="https://www.ufabc.edu.br/" target="_blank">Sobre a UFABC</a></li>
+                        <li><a href="#">5, 6 e 10 de Novembro de 2025</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Dúvidas?</h4>
+                    <ul>
+                        <li><a href="mailto:Qiskit@Qiskitbrasil.com.br" style="color:#fff; opacity:0.85; font-size:1.1rem;">Qiskit@Qiskitbrasil.com.br</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="https://www.youtube.com/@qiskit" target="_blank" rel="noopener">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/showcase/ibm-quantum" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.ibm.com/quantum/qiskit" target="_blank" rel="noopener">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+                <p>&copy; QiskitFallFest-BRASIL 2025&nbsp;|&nbsp;5, 6 e 10 de Novembro de 2025</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
