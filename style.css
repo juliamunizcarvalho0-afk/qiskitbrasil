@@ -1257,6 +1257,13 @@ nav ul li a:hover {
 
 /* <= 768px */
 @media (max-width: 768px) {
+  header h1, 
+  header .main-title {
+    -webkit-text-stroke: 0; 
+    text-shadow: none;      
+    font-size: 2rem;         
+    line-height: 1.2;        
+  }
   .about-content {
     grid-template-columns: 1fr;
     text-align: center;
